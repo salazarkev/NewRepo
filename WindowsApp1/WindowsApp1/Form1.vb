@@ -2,17 +2,20 @@
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
+    Private Sub picturebox2_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
+        Panel3.Hide()
 
-    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+    End Sub
+
+    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
         If MsgBox("Rrealmente quiere apagar el computador?", MsgBoxStyle.Information + vbYesNo) = vbYes Then
 
-            ' lo que pasa si Yes
-            End
+            En
+
 
         Else
 
-            'lo que pasa si no
-
+            'no pasa nada
 
         End If
 
@@ -24,13 +27,7 @@
 
     End Sub
 
-    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
-        Panel3.Hide()
-
-    End Sub
-
-    Private Sub Panel2_click(sender As Object, e As PaintEventArgs) Handles Panel2.Paint
-        Panel3.Hide()
+    Private Sub Panel3_Paint(sender As Object, e As PaintEventArgs) Handles Panel3.Paint
 
     End Sub
 End Class
